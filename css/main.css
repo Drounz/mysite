@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: Poppins;
+  background-color: #5553D4;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  margin-bottom: .7em;
+  width: 70%;
+}
+
+.top-nav {
+  background-color: #5553D4;
+}
+
+.top-nav a {
+  color: aliceblue;
+}
+
+header {
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2em;
+}
+
+header .logo {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Fredoka One', cursive;
+  color: #00000079;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 0.5em;
+}
+
+header ul a {
+  display: block;
+  padding: 0em 1em;
+}
+
+.social-header {
+  display: none;
+}
+
+.hero {
+  background-color: #c4c4c462;
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  padding: 2em;
+}
+
+.hero h1 {
+  color: #000000;
+}
+
+.hero p {
+  margin: 0 auto;
+  font-weight: 200px;
+  color: #FFFFFF;
+}
+
+section {
+  padding: 3em 2em;
+  text-align: center;
+}
+
+.featured {
+  position: relative;
+}
+
+.featured::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 180px;
+  left: 0px;
+  top: 0;
+  background: rgba(35, 36, 62, 0.23);
+  border-radius: 0px 17.9863px 17.9863px 0px;
+  z-index: -1;
+}
+
+.skills-1 {
+  position: relative;
+}
+
+.skills-1::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 180px;
+  left: 0px;
+  top: 0px;
+  background-color: #c4c4c462;
+  border-radius: 0px 17.9863px 17.9863px 0px;
+  z-index: -1;
+}
+
+.skills-2 {
+  position: relative;
+}
+
+.skills-2::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 180px;
+  left: 0px;
+  top: 0px;
+  background: rgba(35, 36, 62, 0.23);
+  border-radius: 0px 17.9863px 17.9863px 0px;
+  z-index: -1;
+}
+
+.featured-title, h2, .meet {
+  text-shadow: 0em 0.2em 0em rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  letter-spacing: .3em;
+  font-size: .82em;
+}
+
+.subtitle, .buttom-subtitle {
+  color: #06061E;
+  margin-bottom: 2em;
+  font-size: .95em;
+  line-height: 1.8em;
+  font-weight: 400;
+}
+
+.about-me {
+  background-color: #c4c4c462;
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  padding: 3em 2em;
+}
+
+.social-footer {
+  font-size: 2px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0em 0em 0em 50em;
+}
+
+.social-footer img {
+  width: 50%;
+}
+
+.social-footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social-footer ul a {
+  display: block;
+  padding: 0em 0em;
+}
+
+@media only screen and (min-width: 600px) {
+  .featured, .skills-1, .skills-2, .logo {
+    text-align: left;
+  }
+  .featured, .skills-1, .skills-2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% auto;
+        grid-template-columns: 50% auto;
+  }
+  .left-1, .left-2, .left-3 {
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+  }
+  img {
+    margin-left: 5em;
+  }
+  .featured::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    left: 0px;
+    top: 0;
+    background: rgba(35, 36, 62, 0.23);
+    border-radius: 0px 17.9863px 17.9863px 0px;
+    z-index: -1;
+  }
+  .skills-1::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    left: 0px;
+    top: 0px;
+    background-color: #c4c4c462;
+    border-radius: 0px 17.9863px 17.9863px 0px;
+    z-index: -1;
+  }
+  .skills-2::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    left: 0px;
+    top: 0px;
+    background: rgba(35, 36, 62, 0.23);
+    border-radius: 0px 17.9863px 17.9863px 0px;
+    z-index: -1;
+  }
+}
+/*# sourceMappingURL=main.css.map */
