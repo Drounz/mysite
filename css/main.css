@@ -55,15 +55,15 @@ header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 0.5em;
 }
 
 header ul a {
-  display: block;
+  display: -ms-grid;
+  display: grid;
   padding: 0em 1em;
 }
 
-.social-header {
+.social-header, .hero-design {
   display: none;
 }
 
@@ -168,22 +168,21 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0em 0em 0em 50em;
-}
-
-.social-footer img {
-  width: 50%;
 }
 
 .social-footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 3em 7em;
 }
 
-.social-footer ul a {
-  display: block;
-  padding: 0em 0em;
+.social-footer ul img {
+  width: 25px;
+  padding: 4em;
 }
 
 @media only screen and (min-width: 600px) {
@@ -236,6 +235,76 @@ section {
     background: rgba(35, 36, 62, 0.23);
     border-radius: 0px 17.9863px 17.9863px 0px;
     z-index: -1;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .hero {
+    height: 90vh;
+    background: #00000081;
+  }
+  .top-nav {
+    padding-left: 0em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 66% auto;
+        grid-template-columns: 66% auto;
+    background: #c4c4c462;
+  }
+  .top-nav header {
+    background: unset;
+  }
+  header {
+    padding: 2em 0em 0em 4em;
+  }
+  header .social-header {
+    display: block;
+    padding: 0em;
+  }
+  header .social-header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 7em;
+    float: right;
+  }
+  header .social-header ul img {
+    width: 25px;
+  }
+  section {
+    padding: 4em;
+  }
+  .hero {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 66% auto;
+        grid-template-columns: 66% auto;
+    background: unset;
+    padding: 0em;
+  }
+  .hero .content {
+    background: #3e3e8025;
+    padding: 6em 8em 6em 4em;
+    text-align: left;
+  }
+  .hero .content h1 {
+    font-size: 49px;
+    line-height: 1.4em;
+    text-transform: capitalize;
+  }
+  .meet {
+    margin: unset;
+    font-size: 20px;
+    padding-top: 3em;
+  }
+  .hero-design {
+    display: unset;
+    margin-left: -50%;
+    margin-top: 15%;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */
